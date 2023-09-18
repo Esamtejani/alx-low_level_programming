@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<std.lib>
+#include<stdlib.h>
 #include<time.h>
 /*
  * you write line of cof
@@ -13,8 +13,8 @@ int main(void)
   int sum;
   char c;
 
-  srand (time(null));
-  while(sum<=2645)
+  srand (time(NULL));
+  while(sum <= 2645)
   {
 	  c = rand()%128;
 	  sum += c;
