@@ -1,23 +1,25 @@
 #include <stdio.h>
-
+#include<std.lib>
+#include<time.h>
+/*
+ * you write line of cof
+ * -remember
+ *  you are not allowed to use a
+ *  you are
+ *
+ */
 int main(void)
 {
-  int n;
-  int a[5];
-  int *p;
+  int sum;
+  char c;
 
-  a[2] = 1024;
-  p = &n;
-  /*
-   * write your line of code here...
-   * Remember:
-   * - you are not allowed to use a
-   * - you are not allowed to modify p
-   * - only one statement
-   * - you are not allowed to code anything else than this line of code
-   */
-  *(p + 5) = 98;
-  /* ...so that this prints 98\n */
-  printf("a[2] = %d\n", a[2]);
-  return (0);
+  srand (time(null));
+  while(sum<=2645)
+  {
+	  c = rand()%128;
+	  sum += c;
+	  putchar(c);
+  }
+  putchar (2772 - sum);
+  return 0;
 }
