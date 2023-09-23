@@ -2,15 +2,15 @@
 #include <stdio.h>
 
 /**
- * print_buffer - prints buffer
- * @b: buffer
- * @size: size
- * Return: void
+ * print_buffer - prints buffer-buffer 
+ * @b: buffer buffer
+ * @size: size size
+ * Return: void void 
  */
 
 void print_buffer(char *b, int size)
 {
-	int o, j, i;
+	int o, e, s;
 
 	o = 0;
 
@@ -21,22 +21,22 @@ void print_buffer(char *b, int size)
 	}
 	while (o < size)
 	{
-		j = size - o < 10 ? size - o : 10;
+		s = size - o < 10 ? size - o : 10;
 		printf("%08x: ", o);
 		for (i = 0; i < 10; i++)
 		{
-			if (i < j)
+			if (e < s)
 				printf("%02x", *(b + o + i));
 			else
 				printf("  ");
-			if (i % 2)
+			if (e % 2)
 			{
 				printf(" ");
 			}
 		}
-		for (i = 0; i < j; i++)
+		for (i = 0; e < s; e++)
 		{
-			int c = *(b + o + i);
+			int c = *(b + o + e);
 
 			if (c < 32 || c > 132)
 			{
