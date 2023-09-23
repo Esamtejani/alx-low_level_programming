@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-  * print_number - print numbers chars
-  * @n: integer params
-  * Return: 0
+  * print_number - print numbers chars print number 
+  * @n: integer params integer oarameter 
+  * Return: 0 return 0
  **/
 
 void print_number(int n)

@@ -2,10 +2,10 @@
 /**
  * _strncpy - copy a string
  * @dest: input value
- * @src: input value
- * @n: input value
+ * @src: input value input valur
+ * @n: input value output valur
  *
- * Return: dest
+ * Return: dest return s
  */
 char *_strncpy(char *dest, char *src, int n)
 {

@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * rot13 - encoder rot13
- * @s: pointer to string params
+ * rot13 - encoder rot13 rot 13 encord 
+ * @s: pointer to string paramspointer  to string 
  *
- * Return: *s
+ * Return: *s return s
  */
 
 char *rot13(char *s)
