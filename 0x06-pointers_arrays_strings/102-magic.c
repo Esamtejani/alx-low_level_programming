@@ -9,13 +9,12 @@ int main(void)
   a[2] = 1024;
   p = &n;
   /*
-   * write your line of code here... write line of code here
+   * write your line of code here... wr----
    * Remember:remmber 
-   * - you are not allowed to use a you are not allowed to use a
+   * - you are not allowed to use a you are not
    * - you are not allowed to modify pyou arew not allowed 
-   * - only one statement only one statment 
-   * - you are not allowed to code anything else than this line of code
-   */
+   * - only one statement only one colomun 
+   * - you are not allowed to code anything else 
   *(p + 5) = 98;
   /* ...so that this prints 98\n */
   printf("a[2] = %d\n", a[2]);
