@@ -1,28 +1,52 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- *zn zrray create_array - Entry point
- *@size:the  size of the array
- *@c:the  character
- * Return: a pointer to the array, or NULL if it fails
+ * _strlen - functio return length of a string
+ *
+ * @s:the  char type
+ * Return:the   length of string
  */
-char *create_array(unsigned int size, char c)
+int _strlen(char *s)
 {
-	char *array = NULL;
-	unsigned int i;
+	int a;
 
-	if (size == 0)
-		return (NULL);
-	if (size != 0)
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		array = (char *)malloc(size * sizeof(char));
-		if (array != NULL)
-		{
-			for (i = 0; i < size; i++)
-				array[i] = c;
-		}
+
 	}
-	return (array);
+	return (a);
+}
+
+/**
+ * *_strdup - function to return pointer to string
+ * @str: pointer to string array input
+ * Return: pointer to string created
+ */
+
+char *_strdup(char *str)
+{
+	char *ptr;
+	int size;
+	int x;
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	size = _strlen(str) + 1;
+	ptr = malloc(size * sizeof(char));
+
+	x = 0;
+	while (x < size)
+	{
+		if (ptr == NULL)
+		{
+			return (NULL);
+	}
+		ptr[x] = str[x];
+		x++;
+	}
+	return (ptr);
 }
