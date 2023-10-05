@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- *functio  free_grid - Entry point
+ * function -  free_grid - Entry point
  *@grid:the  rows of matrix
  *@height:the  columns of string
  * Return:the function a pointer to a 2 dimensional array of integers or null
