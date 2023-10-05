@@ -3,23 +3,20 @@
 #include <stdlib.h>
 
 /**
- * free_grid -it is a  function to free memory
- * @grid:it is a  pointer to grid of int type
- * @height:the  int type
- * Return:the  clean up memory
+ *functio  free_grid - Entry point
+ *@grid:the  rows of matrix
+ *@height:the  columns of string
+ * Return:the function a pointer to a 2 dimensional array of integers or null
  */
-
 void free_grid(int **grid, int height)
 {
-	int y;
+	int i;
+	int *p;
 
-	if (grid == NULL || grid == 0)
+	for (i = 0; i < height; i++)
 	{
-		return;
-	}
-	for (y = 0; y < height;  y++)
-	{
-		free(grid[y]);
+		p = grid[i];
+		free(p);
 	}
 	free(grid);
 }
