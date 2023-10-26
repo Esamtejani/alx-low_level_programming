@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * binary_to_uint - it is Function that converts a binary number to an unsigned int.
+ * binary_to_uint - it is Function that converts a binary  `:wq
+ * an unsigned int.
  * Prototype: it is unsigned int binary_to_uint(const char *b);
  * @b: it is pointing to a string of 0 and 1 chars
  * Return: the converted number, or 0 if
